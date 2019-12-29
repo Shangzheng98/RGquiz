@@ -1,0 +1,190 @@
+1. If I want to see what file exists under current path, I can use linux bash command:
+a. look
+b. lk
+c. dir
+d. ls
+e. nano
+
+2. If I want to delete a file under current path, I can use linux bash command:
+a. del
+b. delete
+c. rm
+d. rmdir
+e. kill
+
+3. If I want to securely connect to a remote server, I can use linux bash command:
+a. sconnect
+b. connect
+c. ssh
+d. sh
+e. ping
+
+4. If I want to run a compiled executable under current path named "robomaster", I can use linux bash command:
+a. ./robomaster
+b. run robomaster
+c. python robomaster
+d. I love robomaster
+e. rm robomaster
+
+5. In linux, if I want to get a useful tool, as a wonderful programmer and experienced bash user, I will (pick 2):
+a. buy it online
+b. use apt-get, pip, brew ...
+c. go to app store
+d. use cget, findapt, get-tool...
+e. search public repositories online
+
+6. If I want to download and setup a repository from Github, the best way is to:
+a. use "git clone <url>" command
+b. go to that repository on Github and then download it
+c. use "git checkout <url>" command
+d. use "git fork <url>" command
+e. throw away my laptop and get some coffee.
+
+7. If I want to commit changes to the repository(no new file), I:
+a. have to "git add *", before "git commit"
+b. just use "git commit"
+c. simply push
+d. can use "git commit -a"
+e. call Jason and ask him about it
+
+8. If I am setting up a git repository I should NOT:
+a. put the build folder under source folder 
+b. write a readme.md
+c. write some skeleton code
+d. think of a reasonable folder structure 
+e. drink coffee
+
+9. Team Leader can answer:
+a. any of your questions!
+b. questions that has answers written in OpenCV/C++ documentation!
+c. questions about you and your girl/boyfriend!
+d. doubt about an algorithm, and future directional questions!
+
+10. If I am figuring out a solution for a team project, I should
+a. start coding right now!
+b. start writing UMLs right now!
+c. talk to my teammates right now!
+d. start drawing out Software Architecture Diagram right now!
+e. Chill and watch Netflix right now!
+
+11. If I want to generate a makefile, with CMakeLists.txt correctly written, I can use:
+a. a "make <address of source code>" command in bash
+b. a "ls <address of source code>" command in bash
+c. a "g++ -o -Wall -std=c11 <address of source code>" command in bash
+d. a "cmake <address of source code>" command in bash
+
+12. If I want to use c.hpp in a.cpp, and b.hpp includes c.hpp, I can:
+a. just include b.hpp in a.cpp
+b. let c.hpp include a.cpp
+c. let a.cpp include c.hpp
+d. let b.hpp include a.cpp
+e. let Visual Studio decide
+
+13. I have a data structure(like list, queue, heap), and I wish to get O(1) during the data recording process, I should(pick the best one):
+a. keep the data sorted
+b. use quick sort so that it reaches O(1)
+c. randomly place the input data 
+d. always append to the end 
+e. always append to the front 
+
+14. I have a data structure(like list, queue, heap), and I wish to get O(logn) during the data finding process, I should do this when adding elements(pick the best one):
+a. keep the data sorted
+b. use quick sort so that it reaches O(logn)
+c. randomly place the input data
+d. always append to the end 
+e. always append to the front
+
+15. When a program forks, it:
+a. copies itself in file
+b. creates another process parallel to itself
+c. creates another child process 
+d. creates a parent process
+e. creates a new thread
+
+16. 
+sem_t a_t, b_t, c_t, d_t;
+void * thread_a(void * pt){
+	sem_post(&a_t);
+}
+void * thread_b(void * pt){
+	sem_wait(&a_t);
+	...
+	sem_post(&b_t);
+}
+void * thread_c(void * pt){
+	sem_wait(&d_t);
+	...
+	sem_post(&c_t);
+}
+void * thread_d(void * pt){
+	sem_wait(&a_t);
+	...
+	sem_post(&d_t);
+}
+which two threads could run simultaneously(pick 2):
+a.a
+b.b
+c.c
+d.d
+
+17. In OpenCV, the main data structure used to store images is:
+a. Mat
+b. Frame
+c. Image
+d. Vector
+e. Scalar
+
+18. In OpenCV, to crop image, I can use the help of _______ function:
+a. ellipse 
+b. crop
+c. >>
+d. rect
+e. rotatedRect
+
+19. In OpenCV, in HSV colorspace, H represents:
+a. the height of the image
+b. the histogram of the image 
+c. the hue of the image
+d. the heat of the image
+e. the hyperglycemia of the image
+
+20. In OpenCV, processing image digitally is faster than processing image in analog because:
+a. CUDA helps with multi thread processing
+b. CPU is designed to process digital data
+c. Fourier transform takes time
+d. Analog is old technology
+e. There is no such thing! Its a fake question!
+
+21. In OpenCV, which of the following is not "pixel-wise operand":
+a. &
+b. |
+c. ^
+d. ~
+e. !
+
+22. In OpenCV, what can you use to change colored image to binary image(pick 2):
+a. inRange
+b. threshold
+c. cut
+d. cvtColor
+e. cvtBinary
+
+23. In this image (img1), although it appear to have over exposure problems, but it does not affect our object detection because:
+a. Its a Lambo in the picture
+b. We can use algorithm to pull back the exposure
+c. Object is green
+d. it builds enough contrast as the background appear to have enough noise so that we can separate the noise and the clean part of the picture for object detection
+e. This picture is a disaster! Whoever took this picture should be kicked in the ass!
+
+24. In this image (img2), although it appear to have under exposure problems, but it does not affect our numerical recognition because:
+a. The number is light source and appear clearly in the image.
+b. the resolution is high
+c. image is black and white so that the noise in color is filtered, so when we deal with this data, it is easier to filter out the parts that we don't need.
+d. Another dark disaster! Whoever took this picture should be kicked in the ass!
+
+25. The following diagram is a sample of SPI traffic. The first three byte sequences represent an accelerometer being configured.
+What dose the first byte sequence represent? Select TWO correct answers
+a. Writing 0xA to address 0x2C
+b. Writing 0x2C to address 0xA
+c. The first byte represents the byte transmitted by the master, while the second byte represents the byte transmitted by the slave
+d. The first byte represents the byte transmitted by the slave, while the second byte represents the byte transmitted by the master
